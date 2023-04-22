@@ -21,3 +21,35 @@ kosár
 admin felület
 képek hozzáadsa alap leírssal,tutorial tipusok kiszerzeés
 */
+//GOMB CLICK POP UP ABLAKOK
+function showDetails(imageSrc, title, description) {
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+  
+    const popupContent = document.createElement('div');
+    popupContent.classList.add('popup-content');
+  
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = title;
+    popupContent.appendChild(img);
+  
+    const titleElem = document.createElement('h2');
+    titleElem.innerText = title;
+    popupContent.appendChild(titleElem);
+  
+    const descElem = document.createElement('p');
+    descElem.innerText = description;
+    popupContent.appendChild(descElem);
+  
+    const closeButton = document.createElement('button');
+    closeButton.innerText = 'Close';
+    closeButton.addEventListener('click', () => {
+      popup.remove();
+    });
+    popupContent.appendChild(closeButton);
+  
+    popup.appendChild(popupContent);
+    document.body.appendChild(popup);
+  }
+  
