@@ -55,7 +55,7 @@ export const KUTYALISTA = [
         
     },
     {   kephely: "./pics/dog7.jpg",
-        nev: "Kifli",
+        nev: "Morzsa",
         kor: 4,
         fajta:"Tacskó",
         lab:4,
