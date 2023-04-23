@@ -1,0 +1,96 @@
+export const KUTYALISTA = [
+    {
+        kephely: "./pics/dog1.jpg",
+        nev: "Velma",
+        kor: 8,
+        fajta: "labrador",
+        lab: 4,
+        nem: "szuka",
+        marmagassag: 45,
+        
+    },
+    {   kephely: "./pics/dog2.jpg",
+        nev: "Foltos",
+        kor: 6,
+        fajta: "keverék",
+        lab: 4,
+        nem: "kan",
+        marmagassag: 43,
+        
+    },
+    {   kephely: "./pics/dog3.jpg",
+        nev: "Piti",
+        kor: 5,
+        fajta: "keverék",
+        lab: 4,
+        nem: "kan",
+        marmagassag: 40,
+        
+    },
+    {   kephely: "./pics/dog4.jpg",
+        nev: "Rex",
+        kor: 6,
+        fajta: "Németjuhász",
+        lab: 4,
+        nem: "kan",
+        marmagassag: 45,
+        
+    },
+    {   kephely: "./pics/dog5.jpg",
+        nev: "Bari",
+        kor: 9,
+        fajta: "Mudi",
+        lab: 4,
+        nem: "kan",
+        marmagassag: 35,
+        
+    },
+    {   kephely: "./pics/dog6.jpg",
+        nev: "Leo",
+        kor: 8,
+        fajta: "Kuvasz",
+        lab: 4,
+        nem: "szuka",
+        marmagassag: 50,
+        
+    },
+    {   kephely: "./pics/dog7.jpg",
+        nev: "Kifli",
+        kor: 4,
+        fajta:"Tacskó",
+        lab:4,
+        nem: "kan",
+        marmagassag: 25,
+        
+    },
+    {   kephely: "./pics/dog8.jpg",
+        nev: "Beni",
+        kor: 6,
+        fajta:"Foxterrier",
+        lab:4,
+        nem: "kan",
+        marmagassag: 35,
+        
+    },
+    {   kephely: "./pics/dog9.jpg",
+        nev: "Csilla",
+        kor: 7,
+        fajta:"Spániel",
+        lab:4,
+        nem: "szuka",
+        marmagassag: 35,
+        
+    }
+];
+
+export const KUTYAKULCS = {
+    kephely: "képhely",
+    nev: "név",
+    kor: "kor",
+    fajta: "fajta",
+    lab: "láb",
+    nem: "ivar",
+    marmagassag: "marmagasság",
+    
+
+}

@@ -3,10 +3,16 @@
 }
 body{
     background-color: rgb(77, 67, 67);
-}
+    background-image:url(/pics/background1.png);
+}   
 .card{
     margin: 5px;
 }
+.dog-img {
+    height: auto;
+    width: 300px;
+    object-fit: cover;
+  }
 .popup {
     position: fixed;
     top: 0;
