@@ -9,8 +9,8 @@ body{
     margin: 5px;
 }
 .dog-img {
-    height: auto;
-    width: 300px;
+    height: 270px;
+    width: 100%;
     object-fit: cover;
   }
 .popup {
