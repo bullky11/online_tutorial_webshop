@@ -37,18 +37,25 @@ for (let i = 0; i < KUTYALISTA.length; i++) {
 
   // Create the breed element
   const breed = document.createElement('p');
-  breed.innerText = `Breed: ${dog.fajta}`;
+  breed.innerText = `Fajta: ${dog.fajta}`;
   cardContent.appendChild(breed);
 
   // Create the age element
   const age = document.createElement('p');
-  age.innerText = `Age: ${dog.kor}`;
+  age.innerText = `Kor: ${dog.kor}`;
   cardContent.appendChild(age);
 
   // Create the gender element
   const gender = document.createElement('p');
-  gender.innerText = `Gender: ${dog.nem}`;
+  gender.innerText = `Nem: ${dog.nem}`;
   cardContent.appendChild(gender);
+  //gomb létrehozása
+  const GOMB =document.createElement('button');
+  GOMB.innerText=`Részletek`;
+  GOMB.classList.add('details-button');
+  cardContent.appendChild(GOMB);
+  
+
 
   // Add a click event listener to show the details of the dog in a popup
   card.addEventListener('click', () => {
