@@ -4,6 +4,7 @@ import { KUTYAKULCS } from "./adatok.js";
 // Get the parent element where the dog cards will be added
 const parentElement = document.getElementById('dog-cards');
 
+
 // Loop through the KUTYALISTA array and create a card for each dog
 for (let i = 0; i < KUTYALISTA.length; i++) {
   const dog = KUTYALISTA[i];
@@ -54,8 +55,6 @@ for (let i = 0; i < KUTYALISTA.length; i++) {
   GOMB.innerText=`Részletek`;
   GOMB.classList.add('details-button');
   cardContent.appendChild(GOMB);
-  
-
 
   // Add a click event listener to show the details of the dog in a popup
   card.addEventListener('click', () => {
@@ -71,4 +70,51 @@ for (let i = 0; i < KUTYALISTA.length; i++) {
     row.classList.add('row');
     parentElement.appendChild(row);
   }
+  // Create the modal element
+const modal = document.createElement('div');
+modal.classList.add('modal');
+modal.id = 'myModal';
+
+// Create the modal dialog element
+const modalDialog = document.createElement('div');
+modalDialog.classList.add('modal-dialog');
+modal.appendChild(modalDialog);
+
+// Create the modal content element
+const modalContent = document.createElement('div');
+modalContent.classList.add('modal-content');
+modalDialog.appendChild(modalContent);
+
+// Create the modal header element
+const modalHeader = document.createElement('div');
+modalHeader.classList.add('modal-header');
+modalContent.appendChild(modalHeader);
+
+// Create the modal title element
+const modalTitle = document.createElement('h5');
+modalTitle.classList.add('modal-title');
+modalTitle.innerText = 'Dog Details';
+modalHeader.appendChild(modalTitle);
+
+// Create the close button element
+const closeButton = document.createElement('button');
+closeButton.type = 'button';
+closeButton.classList.add('close');
+closeButton.dataset.dismiss = 'modal';
+closeButton.innerHTML = 'CLOSE';
+modalHeader.appendChild(closeButton);
+
+// Create the modal body element
+const modalBody = document.createElement('div');
+modalBody.classList.add('modal-body');
+modalContent.appendChild(modalBody);
+
+// Create the modal footer element
+const modalFooter = document.createElement('div');
+modalFooter.classList.add('modal-footer');
+modalContent.appendChild(modalFooter);
+
+// Add the modal to the document body
+document.body.appendChild(modal);
+
 }
